@@ -1,0 +1,136 @@
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+body > header{
+    margin-bottom: 100px;
+}
+header ul{
+    list-style-type:none;
+}
+header ul li{
+    margin-left: 25px;
+    display: inline;
+    
+}
+
+header ul li a:hover{
+    color: #FF6207 !important;
+}
+.nav-slidebar{
+    background-color: #272727;
+    position: fixed;
+    top: 0;
+    right: 0;
+    min-width: 30%;
+    z-index: 100;
+    height: 100vh;
+}
+.blockDisplay{
+    background-color: #000000c7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+}
+
+.nav-slidebar button:hover{
+    text-shadow: 0px 0px 10px #FF6207;
+    
+}
+.nav-slidebar a:hover{
+    text-shadow: 0px 0px 10px #FF6207;
+    color: #FF6207;
+    transition: 0.15s ease-in-out;
+}
+.nav-slidebar .navbar{
+    width: 100%;
+}
+.nav-slidebar .navbar > ul{
+    width: 100%;
+    padding: 0px;
+}
+.nav-slidebar .wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items:first baseline;
+    gap: 30px;
+}
+.nav-slidebar button{
+    position: block;
+    text-align: end;
+    padding-right: 35px;
+    background-color: transparent;
+    border: none;
+    font-weight: 600;
+    font-size: 30px;
+    color: #FF6207;
+}
+.nav-slidebar a{
+    color: #ffffff;
+    padding: 25px;
+}
+
+.nav-slidebar ul{
+    list-style-type: none;
+}
+.nav-slidebar ul li{
+    width: 100%;
+    padding-bottom: 10px;
+    position: relative;
+}
+.nav-slidebar ul li::after{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 150%;
+    height: 1px;
+    background-color: white;
+}
+.nav-slidebar-closed{
+    transform: translateX(1500px);
+}
+.nav-slidebar-open{
+    animation: nav-open 0.25s ease-out forwards;
+}
+@keyframes nav-open {
+    0%{
+        transform: translateX(1500px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+@media (max-width:1400px) {
+    header ul li{
+        display: none;
+    }
+    header .humburger-button{
+        display: block !important;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: max-content;
+    }
+    header .humburger-button:hover{
+        cursor: pointer;
+    }
+}
+@media (max-width:900px) {
+    .nav-slidebar{
+        min-width: 50%;
+    }
+}
+@media (max-width:550px) {
+    .nav-slidebar{
+        min-width: 70%;
+    }
+}
+@media (max-width:340px) {
+    .nav-slidebar{
+        min-width: 90%;
+    }
+}
