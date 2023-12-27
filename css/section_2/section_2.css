@@ -1,0 +1,11 @@
+
+.section_2 img{
+    width: 100%;
+}
+
+@media (max-width:1000px) {
+    body > main > section.section_2.aos-init.aos-animate > div > div{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
