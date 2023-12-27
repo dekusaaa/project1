@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+  <title>Документ</title>
+  <link rel="icon" type="image/x-icon" href="./imges/icon/Group 85.svg">
+</head>
+
+<body>
+
+  <header class="p-3 bg-transporent text-white">
+    <div class="container-sm">
+      <div class="row">
+        <div class="col-7 logo d-flex align-items-center">
+          <a href="#"><img src="./imges/header/logo.svg" alt=""></a>
+        </div>
+        <div class="col-5">
+          <nav class="navbar">
+            <ul>
+              <li>
+                <a href="#about-event">О мероприятие</a>
+              </li>
+              <li>
+                <a href="#speakers">Спикеры</a>
+              </li>
+              <li>
+                <a href="#programm">Программа</a>
+              </li>
+              <li>
+                <a href="#section_9">Регистрация</a>
+              </li>
+            </ul>
+            <div style="display: none;"
+              onclick="scrollLock.disablePageScroll();document.querySelector('.nav-slidebar').classList.add('nav-slidebar-open'); scrollLock.disablePageScroll(); document.querySelector('.blockDisplay').style.display = 'block';"
+              class="humburger-button"><img src="imges/header/burger.svg" alt=""></div>
+          </nav>
+
+        </div>
+      </div>
+    </div>
+  </header>
+  <div style="display: none;" class="blockDisplay"></div>
+  <div class="nav-slidebar nav-slidebar-closed">
+    <div class="d-flex flex-column">
+      <button
+        onclick="scrollLock.enablePageScroll();document.querySelector('.nav-slidebar').classList.remove('nav-slidebar-open'); scrollLock.enablePageScroll();document.querySelector('.blockDisplay').style.display = 'none';">_</button>
+      <nav class="navbar">
+        <ul class="d-flex flex-column my-5 gap-3">
+          <li>
+            <a class="fs-3" href="#about-event">О мероприятие</a>
+          </li>
+          <li>
+            <a class="fs-3" href="#speakers">Спикеры</a>
+          </li>
+          <li>
+            <a class="fs-3" href="#programm">Программа</a>
+          </li>
+          <li>
+            <a class="fs-3" href="#section_9">Регистрация</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+
+
+  <main>
+    <section id="about-event" data-aos="fade-up" class="section_1">
+      <div class="container-sm">
+        <div class="row section1-flex">
+          <div class="col">
+            <div class="d-flex flex-column gap-3">
+              <div class="row gap-4">
+                <div class="row">
+                  <div class="row h2 text-white">
+                    <h2>Конференция</h2>
+                  </div>
+                  <div class="row">
+                    <h1 class="h1 display-1 main-theme">«Бизнес74»</h1>
+                  </div>
+                </div>
+                <div class="row gap-3">
+                  <div class="row">
+                    <div class="str fs-3 d-flex align-items-center gap-2">
+                      <img src="./imges/section_1/Calendar.svg" alt="">
+                      <div class="text-white"> <time datetime="2023-05-19T11:30:00">19 мая в 11:30</time> </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="str fs-3 d-flex align-items-center gap-2">
+                      <img src="./imges/section_1/metka.svg" alt="">
+                      <div class="text-white">
+                        <address> <a href="">Гранд-отель «Видгоф» </a> </address> <span class="text-secondary">(зал
+                          «Магнат»)</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <a href="#section_9"><button data-aos="fade-up"  class="btnReg">Регистрация</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="row d-flex align-items-center justify-content-end linesMD">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section data-aos="fade-up" class="section_2">
+      <div class="container-sm">
+        <div class="row">
+          <div class=" col-12 col-lg-6">
+            <img src="./imges/section_2/Group 135.svg" alt="">
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="wrapper">
+              <h2 class="text-white">Конференция <b>«Бизнес74»<b></h2>
+              <p class="text-white fw-light">19 мая мы приглашаем вас на конференцию «Бизнес74» в гранд-отеле «Видгоф».
+                На мероприятии выступят ведущие эксперты интернет-агентства INTEC, «Инсайдер», SMM-агентства More
+                и другие.</p>
+              <p class="text-white fw-light">Главным событием встречи будет презентация новой версии «Инсайдер»
+                от директора компании «Инсайдер», Ярослава Голуб. Вы первыми узнаете о новинках DLP-системы «Инсайдер»,
+                а также о том, как эти новинки помогут раскрыть потенциал вашего бизнеса.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section id="speakers" class="section_3">
+      <div class="container-sm">
+        <h2 class="main-theme mb-5">Спикеры</h2>
+
+        <div class="row">
+          <div data-aos="fade-up" class="col-lg-3 col-sm-6 col-xs-12 my-3">
+            <div class="wrapperSpeaker d-flex flex-sm-column flex-row align-items-center">
+              <div class="photoMainTheme">
+                <!-- <img src="./imges/section_3/1.png" alt=""> -->
+                <div name="1" class="imgBackGround"></div>
+              </div>
+              <div class="d-flex-row ">
+                <h3>Ярослав Голуб</h3>
+                <span class="fw-light text-secondary">Директор компании INTEC Руководитель сервиса Инсайдер</span>
+              </div>
+            </div>
+          </div>
+          <div data-aos="fade-up" class="col-lg-3 col-sm-6 col-xs-12 my-3">
+            <div class="wrapperSpeaker  d-flex flex-sm-column flex-row align-items-center">
+              <div class="photoMainTheme">
+                <!-- <img src="./imges/section_3/2.png" alt=""> -->
+                <div name="2" class="imgBackGround"></div>
+              </div>
+              <div class="d-flex-row">
+                <h3>Александра Петрова</h3>
+                <span class="fw-light text-secondary">Руководитель SMM агентства «More», действующий SMM-менеджер
+                  и таргетолог</span>
+              </div>
+            </div>
+          </div>
+          <div data-aos="fade-up" class="col-lg-3 col-sm-6 col-xs-12 my-3">
+            <div class="wrapperSpeaker  d-flex flex-sm-column flex-row align-items-center">
+              <div class="photoMainTheme">
+                <div name="3" class="imgBackGround"></div>
+              </div>
+              <div class="d-flex-row">
+                <h3>Сергей Иванов</h3>
+                <span class="fw-light text-secondary">Ведущий менеджер INTEC</span>
+              </div>
+            </div>
+          </div>
+          <div data-aos="fade-up" class="col-lg-3 col-sm-6 col-xs-12 my-3">
+            <div class="wrapperSpeaker  d-flex flex-sm-column flex-row align-items-center">
+              <div class="photoMainTheme">
+                <div name="4" class="imgBackGround"></div>
+              </div>
+              <div class="d-flex-row ">
+                <h3>Андрей Степанов</h3>
+                <span class="fw-light text-secondary">Бизнес-архитектор,владелец завода, ресторана и консалтинговой
+                  компании</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div data-aos="fade-up" class="col-lg-3 col-sm-6 col-xs-12 my-3">
+            <div class="wrapperSpeaker  d-flex flex-sm-column flex-row align-items-center">
+              <div class="photoMainTheme">
+                <div name="5" class="imgBackGround"></div>
+              </div>
+              <div class="d-flex-row ">
+                <h3>Павел Подшивалов</h3>
+                <span class="fw-light text-secondary">Руководитель сервиса Инсайдер</span>
+              </div>
+            </div>
+          </div>
+          <div data-aos="fade-up" class="col-lg-3 col-sm-6 col-xs-12 my-3">
+            <div class="wrapperSpeaker d-flex   flex-sm-column flex-row align-items-center">
+              <div class="photoMainTheme">
+                <div name="6" class="imgBackGround"></div>
+              </div>
+              <div class="d-flex-row ">
+                <h3>Александр Петров</h3>
+                <span class="fw-light text-secondary">Руководитель SMM агентства «More»</span>
+              </div>
+            </div>
+          </div>
+          <div data-aos="fade-up" class="col-lg-3 col-sm-6 col-xs-12 my-3">
+            <div class="wrapperSpeaker d-flex  flex-sm-column flex-row align-items-center">
+              <div class="photoMainTheme">
+                <div name="7" class="imgBackGround"></div>
+              </div>
+              <div class="d-flex-row ">
+                <h3>Сергей Конасов</h3>
+                <span class="fw-light text-secondary">Ведущий менеджер </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-12 d-flex align-items-center">
+            <a class="main-theme fs-3" href="">Все спикеры</a>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section id="programm" class="mb-5 section_4">
+      <div class="container-sm">
+        <h2 class="main-theme my-5">Программа мероприятия</h2>
+
+        <div data-aos="fade-up" class="container-for-row">
+          <div class="row">
+            <div class="col-md-4 col-xs-12 text-xs-start">
+              <p class="main-theme text-xs-start">Регистрация</p>
+            </div>
+            <div class="col-md-4 col-xs-12 order-md-0 order-first text-xs-start">
+              <h2 class="text-md-center main-theme fw-bold text-xs-start">11:30</h2>
+            </div>
+            <div class="col-md-4 col-xs-12 text-xs-start">
+
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-up" class="borderBottom my-3"></div>
+
+
+
+        <div data-aos="fade-up" class="container-for-row">
+          <div class="row">
+            <div class="col-md-4 col-xs-12">
+              <p class="main-theme fw-light">Открытие конференции</p>
+            </div>
+            <div class="col-md-4 order-md-0 order-first col-xs-12">
+              <h2 class="text-md-center main-theme fw-bold text-xs-start">12:15</h2>
+            </div>
+            <div class="col-md-4 col-xs-12">
+
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-up" class="borderBottom my-3"></div>
+
+
+
+        <div data-aos="fade-up" class="container-for-row">
+          <div class="row">
+            <div class="col-md-4 col-xs-12">
+              <p class="fw-light">Первый среди первых: Как продавать больше всех в сверхконкурентной нише </p>
+            </div>
+            <div class="col-md-4 order-md-0 order-first col-xs-12">
+              <h2 class="text-md-center fw-bold text-xs-start">12:30</h2>
+            </div>
+            <div class="col-md-4 col-xs-12">
+              <div class="row">
+                <p>Ярослав Голуб</p>
+              </div>
+              <div class="row">
+                <p class="fw-light text-secondary text-start">Директор компании INTEC
+                  Руководитель сервиса Инсайдер</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-up" class="borderBottom my-3"></div>
+
+
+        <div data-aos="fade-up" class="container-for-row">
+          <div class="row">
+            <div class="col-md-4 col-xs-12">
+              <p class="fw-light">Презентация новой версии «Инсайдер» </p>
+            </div>
+            <div class="col-md-4 order-md-0 order-first col-xs-12">
+              <h2 class="text-md-center fw-bold text-xs-start">13:00</h2>
+            </div>
+            <div class="col-md-4 col-xs-12">
+              <div class="row">
+                <p class="my-0">Ярослав Голуб</p>
+              </div>
+              <div class="row">
+                <p class="fw-light text-secondary text-start">Директор компании INTEC
+                  Руководитель сервиса Инсайдер</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-up" class="borderBottom my-3"></div>
+
+
+
+        <div data-aos="fade-up" class="container-for-row">
+          <div class="row">
+            <div class="col-md-4 col-xs-12 text-xs-start">
+              <p class="main-theme text-xs-start">Кофе-брейк</p>
+            </div>
+            <div class="col-md-4 col-xs-12 order-md-0 order-first text-xs-start">
+              <h2 class="text-md-center main-theme fw-bold text-xs-start">14:30</h2>
+            </div>
+            <div class="col-md-4 col-xs-12 text-xs-start">
+
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-up" class="borderBottom my-3"></div>
+
+
+
+        <div data-aos="fade-up" class="container-for-row">
+          <div class="row">
+            <div class="col-md-4 col-xs-12">
+              <p class="fw-light">Как остановить слив бюджета: Эффективно настраиваем таргетированную рекламу
+                в Instagram и Facebook</p>
+            </div>
+            <div class="col-md-4 order-md-0 order-first col-xs-12">
+              <h2 class="text-md-center  fw-bold text-xs-start">14:50</h2>
+            </div>
+            <div class="col-md-4 col-xs-12">
+              <div class="row">
+                <p class="my-0">Александра Петрова</p>
+              </div>
+              <div class="row">
+                <p class="fw-light text-secondary text-start">Руководитель SMM агентства «More», действующий
+                  SMM-менеджер и таргетолог</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-up" class="borderBottom my-3"></div>
+
+
+
+        <div data-aos="fade-up" class="container-for-row">
+          <div class="row">
+            <div class="col-md-4 col-xs-12">
+              <p class="fw-light">Как организовать слаженную работу команды</p>
+            </div>
+            <div class="col-md-4 order-md-0 order-first col-xs-12">
+              <h2 class="text-md-center fw-bold text-xs-start">15:20</h2>
+            </div>
+            <div class="col-md-4 col-xs-12">
+              <div class="row">
+                <p class="my-0">Сергей Иванов</p>
+              </div>
+              <div class="row">
+                <p class="fw-light text-secondary text-start">Ведущий менеджер INTEC</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-up" class="borderBottom my-3"></div>
+
+
+
+        <div data-aos="fade-up" class="container-for-row">
+          <div class="row">
+            <div class="col-md-4 col-xs-12">
+              <p class="fw-light">Интерактив с призами</p>
+            </div>
+            <div class="col-md-4 order-md-0 order-first col-xs-12">
+              <h2 class="text-md-center fw-bold text-xs-start">15:50</h2>
+            </div>
+            <div class="col-md-4 col-xs-12">
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-up" class="borderBottom my-3"></div>
+
+
+
+        <div data-aos="fade-up" class="container-for-row">
+          <div class="row">
+            <div class="col-md-4 col-xs-12">
+              <p class="fw-light">Как разбудить интерес клиента и подготовить его к продаже: метод вантуза</p>
+            </div>
+            <div class="col-md-4 order-md-0 order-first col-xs-12">
+              <h2 class="text-md-center fw-bold text-xs-start">16:00</h2>
+            </div>
+            <div class="col-md-4 col-xs-12">
+              <div class="row">
+                <p class="my-0">Андрей Степанов</p>
+              </div>
+              <div class="row">
+                <p class="fw-light text-secondary text-start">Бизнес-архитектор, владелец завода, ресторана
+                  и консалтинговой компании</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-up" class="borderBottom my-3"></div>
+
+
+        <div data-aos="fade-up" class="container-for-row">
+          <div class="row">
+            <div class="col-md-4 col-xs-12">
+              <p class="fw-light">Ответы на вопросы слушателей</p>
+            </div>
+            <div class="col-md-4 order-md-0 order-first col-xs-12">
+              <h2 class="text-md-center fw-bold text-xs-start">16:30</h2>
+            </div>
+            <div class="col-md-4 col-xs-12">
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-up" class="borderBottom my-3"></div>
+
+
+
+        <div data-aos="fade-up" class="container-for-row">
+          <div class="row">
+            <div class="col-md col-sm-12 text-xs-start">
+              <p class="main-theme text-xs-start my-0">Закрытие конференции.
+              <p class="main-theme fw-light">Объявление победителей конкурса</p>
+              </p>
+            </div>
+            <div class="col-md col-sm-12 order-md-0 order-first text-xs-start">
+              <h2 class="text-md-center main-theme fw-bold text-xs-start">17:00</h2>
+            </div>
+            <div class="col-md col-sm-12 text-xs-start">
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </section>
+  </main>
+
+    <!-- Connected lib -->
+  <!-- scroll lock -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scroll-lock/2.1.2/scroll-lock.min.js" ></script>
+  <!-- i-mask -->
+  <script src="https://unpkg.com/imask"></script>
+  <!-- BootStrap v5 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+
+
+
+
+  <link rel="stylesheet" href="./css/header/header.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/elements.css">
+  <link rel="stylesheet" href="./css/section_1/section_1.css">
+  <link rel="stylesheet" href="./css/section_2/section_2.css">
+  <link rel="stylesheet" href="./css/section_3/section_3.css">
+  <link rel="stylesheet" href="./css/section_4/section_4.css">
+  <script src="app/main.js"></script>
